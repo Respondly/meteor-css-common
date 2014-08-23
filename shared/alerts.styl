@@ -1,0 +1,72 @@
+@import 'core.import'
+@import 'alert.import'
+
+
+.yellow-sticky
+  yellow-sticky()
+  div[class^='ico-']
+    opacity 0.3
+
+
+
+// Warning Panel --------------------------------------------------
+WARNING_TITLE_ORANGE = #e29300
+
+
+.warning-panel
+  yellow-sticky()
+  padding 8px 12px
+  padding-top 5px
+  border-left solid 5px orange
+  .title
+    color WARNING_TITLE_ORANGE
+  &.has-icon
+    .title
+      padding-right 15px
+
+
+
+.warning-panel, .yellow-sticky
+  div[class^='ico-']
+    abs-pos null, 5, 5, null
+
+
+
+.warning-bar
+  yellow-sticky-colors()
+  position relative
+  padding 8px
+  padding-top 4px
+  padding-bottom 5px
+  border-radius 4px
+
+  warningBarFont()
+    font-size 12px
+    font-style italic
+    color darken(WARNING_TITLE_ORANGE, 5%)
+    line-height 17px
+
+  warningBarFont()
+  p
+    warningBarFont()
+
+  div[class^='ico-']
+    float right
+    margin-right -5px
+    margin-top -1px
+    opacity 0.5
+
+
+
+.warning-panel, .warning-bar, .yellow-sticky
+  .ico-error
+    core-image('icons/alert_panel_error.svg')
+  .ico-info
+    core-image('icons/alert_panel_info.svg')
+  .ico-warn
+    core-image('icons/alert_panel_warn.svg')
+
+
+
+
+
