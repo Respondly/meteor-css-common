@@ -8,12 +8,18 @@ Package.on_use(function (api) {
   api.use(['css-stylus']);
 
   // Generated with: github.com/philcockfield/meteor-package-paths
-  api.add_files('shared/alerts.styl', 'client');
-  api.add_files('shared/alerts.styl', 'server', { isAsset:true });
-  api.add_files('shared/buttons.styl', 'client');
-  api.add_files('shared/buttons.styl', 'server', { isAsset:true });
-  api.add_files('shared/common.styl', 'client');
-  api.add_files('shared/common.styl', 'server', { isAsset:true });
+  api.add_files('shared/_reset/html5-reset.css', 'client');
+  api.add_files('shared/_reset/html5-reset.css', 'server', { isAsset:true });
+  api.add_files('shared/classes/alerts.styl', 'client');
+  api.add_files('shared/classes/alerts.styl', 'server', { isAsset:true });
+  api.add_files('shared/classes/buttons.styl', 'client');
+  api.add_files('shared/classes/buttons.styl', 'server', { isAsset:true });
+  api.add_files('shared/classes/common.styl', 'client');
+  api.add_files('shared/classes/common.styl', 'server', { isAsset:true });
+  api.add_files('shared/css-mixins/alert.import.styl', 'client');
+  api.add_files('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
+  api.add_files('shared/css-mixins/core.import.styl', 'client');
+  api.add_files('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
 
 });
 
