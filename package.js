@@ -8,8 +8,8 @@ Package.on_use(function (api) {
   api.use(['css-stylus']);
 
   // Generated with: github.com/philcockfield/meteor-package-paths
-  api.add_files('shared/_reset/html5-reset.css', 'client');
-  api.add_files('shared/_reset/html5-reset.css', 'server', { isAsset:true });
+  api.add_files('shared/_normalize/normalize.css', 'client');
+  api.add_files('shared/_normalize/normalize.css', 'server', { isAsset:true });
   api.add_files('shared/classes/alerts.styl', 'client');
   api.add_files('shared/classes/alerts.styl', 'server', { isAsset:true });
   api.add_files('shared/classes/buttons.styl', 'client');
