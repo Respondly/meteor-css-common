@@ -4,7 +4,10 @@
 // -----------------------------------------------------------------
 
 
-$RED = rgba(255, 0, 0, 0.05)
+$SANS       = 'Open Sans', sans-serif
+
+$RED        = rgba(255, 0, 0, 0.05)
+$LINK_BLUE  = #0095e2
 
 
 // -----------------------------------------------------------------
@@ -36,6 +39,9 @@ abs-pos(left = 0, top = 0, right = 0, bottom = 0, unit=px)
 
 
 
+// Center Position ------------------------------------------------------
+
+
 abs-center-x(offset = 0)
   position absolute
   left 50%
@@ -48,13 +54,34 @@ abs-center-y(offset = 0)
   transform translateY(-50%)
   toUnit 'margin-top', offset
 
-abs-center-xy(offsetX = 0, offsetY = 0)
+abs-center(offsetX = 0, offsetY = 0)
   position absolute
   left 50%
   top 50%
   transform translate(-50%, -50%)
   toUnit 'margin-left', offsetX
   toUnit 'margin-top', offsetY
+
+
+// ------------------------------------------------------
+
+
+abs-middle(width = null, height = null, unit=px)
+  position absolute
+  if width is not null
+    left 50%
+    margin-left unit((0 - width) / 2, unit)
+
+  if height is not null
+    top 50%
+    margin-top unit((0 - height) / 2, unit)
+
+abs-middle-x(width, unit=px)
+  abs-middle(width, null, unit)
+
+abs-middle-y(height, unit=px)
+  abs-middle(null, height, unit)
+
 
 
 
@@ -68,6 +95,17 @@ size(width, height = width, unit=px)
 min-size(width, height = width, unit=px)
   toUnit 'width',  min-width,  unit
   toUnit 'height', min-height, unit
+
+
+
+// Popup --------------------------------------------------------
+
+
+popup-bg()
+  background white
+  border solid 1px darken(white, 40%)
+  border-radius 5px
+  box-shadow 5px 5px 10px 0px rgba(black ,0.1)
 
 
 
