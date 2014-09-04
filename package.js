@@ -15,12 +15,16 @@ Package.on_use(function (api) {
   api.add_files('shared/_normalize/normalize.css', 'server', { isAsset:true });
   api.add_files('shared/classes/alerts.styl', 'client');
   api.add_files('shared/classes/alerts.styl', 'server', { isAsset:true });
+  api.add_files('shared/classes/animation.styl', 'client');
+  api.add_files('shared/classes/animation.styl', 'server', { isAsset:true });
   api.add_files('shared/classes/buttons.styl', 'client');
   api.add_files('shared/classes/buttons.styl', 'server', { isAsset:true });
   api.add_files('shared/classes/common.styl', 'client');
   api.add_files('shared/classes/common.styl', 'server', { isAsset:true });
   api.add_files('shared/css-mixins/alert.import.styl', 'client');
   api.add_files('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
+  api.add_files('shared/css-mixins/animation.import.styl', 'client');
+  api.add_files('shared/css-mixins/animation.import.styl', 'server', { isAsset:true });
   api.add_files('shared/css-mixins/core.import.styl', 'client');
   api.add_files('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
   api.add_files('server/fonts.coffee', 'server');

@@ -1,0 +1,23 @@
+
+rotating(duration = 2s, origin = 50% 50%, iterationCount = infinite, timingFunction = linear)
+  rotating-clockwise(duration, origin, iterationCount, timingFunction)
+
+
+
+rotating-clockwise(duration = 2s, origin = 50% 50%, iterationCount = infinite, timingFunction = linear)
+  transform-origin          origin
+  animation-name            core-rotate-clockwise
+  animation-duration        duration
+  animation-iteration-count iterationCount
+  animation-timing-function timingFunction
+
+
+
+rotating-counter-clockwise(duration = 2s, origin = 50% 50%, iterationCount = infinite, timingFunction = linear)
+  transform-origin          origin
+  animation-name            core-rotate-counter-clockwise
+  animation-duration        duration
+  animation-iteration-count iterationCount
+  animation-timing-function timingFunction
+
+
