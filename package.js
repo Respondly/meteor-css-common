@@ -19,8 +19,10 @@ Package.on_use(function (api) {
   api.add_files('shared/classes/animation.styl', 'server', { isAsset:true });
   api.add_files('shared/classes/buttons.styl', 'client');
   api.add_files('shared/classes/buttons.styl', 'server', { isAsset:true });
-  api.add_files('shared/classes/common.styl', 'client');
-  api.add_files('shared/classes/common.styl', 'server', { isAsset:true });
+  api.add_files('shared/classes/common-classes.styl', 'client');
+  api.add_files('shared/classes/common-classes.styl', 'server', { isAsset:true });
+  api.add_files('shared/classes/common-element.styl', 'client');
+  api.add_files('shared/classes/common-element.styl', 'server', { isAsset:true });
   api.add_files('shared/css-mixins/alert.import.styl', 'client');
   api.add_files('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
   api.add_files('shared/css-mixins/animation.import.styl', 'client');
