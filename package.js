@@ -7,7 +7,6 @@ Package.describe({
 Package.on_use(function (api) {
   api.use(['coffeescript']);
   api.use(['css-stylus']);
-  api.export('Fonts');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.add_files('shared/_normalize/normalize.css', 'client');
