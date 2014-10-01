@@ -20,11 +20,11 @@ RED_BG_TOP = #ED5B54
 RED_BG_BOTTOM = #C1362A
 
 
-a.btn, a[class^='btn-']
-  user-select none
 
 
-a.btn, a[class^='btn-'], button.btn, button[class^='btn-']
+a.btn, a[class^='btn-'],
+button.btn, button[class^='btn-'],
+input[type='submit'].btn, input[type='submit'][class^='btn-']
   display inline-block
   -webkit-font-smoothing subpixel-antialiased
   box-sizing border-box
@@ -34,6 +34,7 @@ a.btn, a[class^='btn-'], button.btn, button[class^='btn-']
   border solid 1px
   cursor pointer
   outline none !important
+  user-select none
 
   // Color.
   color darken(white, 90%)
@@ -158,22 +159,22 @@ buttonSize(HEGIHT, FONT_SIZE, HORIZONTAL_PADDING)
   padding 0 HORIZONTAL_PADDING
 
 
-a.btn, button.btn
+a.btn, button.btn, input[type='submit']
   buttonSize(37px, 14px, 25px)
 
-a.btn-mini, button.btn-mini
+a.btn-mini, button.btn-mini, input[type='submit'].btn-mini
   buttonSize(23px, 12px, 20px)
   border-radius 3px
 
-a.btn-pill, button.btn-pill
+a.btn-pill, button.btn-pill, input[type='submit'].btn-pill
   HEGIHT = 22px
   buttonSize(HEGIHT, 12px, 20px)
   border-radius (HEGIHT / 2)
 
-a.btn-small, button.btn-small
+a.btn-small, button.btn-small, input[type='submit'].btn-small
   buttonSize(28px, 13px, 20px)
 
-a.btn-large, button.btn-large
+a.btn-large, button.btn-large, input[type='submit'].btn-large
   buttonSize(50px, 20px, 45px)
 
 
@@ -182,7 +183,9 @@ a.btn-large, button.btn-large
 
 
 
-a.btn[disabled], a[class^='btn-'][disabled], button.btn[disabled], button[class^='btn-'][disabled]
+a.btn[disabled], a[class^='btn-'][disabled],
+button.btn[disabled], button[class^='btn-'][disabled]
+input[type='submit'].btn[disabled], input[type='submit'][class^='btn-'][disabled]
   // Default (silver).
   opacity 0.3
   background BG_BOTTOM
