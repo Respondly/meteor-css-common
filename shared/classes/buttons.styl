@@ -30,7 +30,6 @@ input[type='submit'].btn, input[type='submit'][class^='btn-']
   box-sizing border-box
   font-family $SANS, 'Helvetica Neue', Helvetica, Arial, sans-serif
   font-weight 400
-  border-radius 5px
   border solid 1px
   cursor pointer
   outline none !important
@@ -163,30 +162,33 @@ input[type='submit'].btn, input[type='submit'][class^='btn-']
 // Size ------------------------------------------------------
 
 
-buttonSize(HEGIHT, FONT_SIZE, HORIZONTAL_PADDING)
-  height HEGIHT
-  line-height HEGIHT - 2
+buttonSize(HEIGHT, FONT_SIZE, HORIZONTAL_PADDING)
+  height HEIGHT
+  line-height HEIGHT - 2
   font-size FONT_SIZE
   padding 0 HORIZONTAL_PADDING
 
 
 a.btn, button.btn, input[type='submit']
   buttonSize(32px, 14px, 25px)
+  border-radius 4px
 
 a.btn-mini, button.btn-mini, input[type='submit'].btn-mini
   buttonSize(23px, 12px, 20px)
   border-radius 3px
 
 a.btn-pill, button.btn-pill, input[type='submit'].btn-pill
-  HEGIHT = 22px
-  buttonSize(HEGIHT, 12px, 20px)
-  border-radius (HEGIHT / 2)
+  HEIGHT = 22px
+  buttonSize(HEIGHT, 12px, 20px)
+  border-radius (HEIGHT / 2)
 
 a.btn-small, button.btn-small, input[type='submit'].btn-small
   buttonSize(28px, 13px, 20px)
+  border-radius 3px
 
 a.btn-large, button.btn-large, input[type='submit'].btn-large
   buttonSize(50px, 20px, 35px)
+  border-radius 5px
 
 
 
