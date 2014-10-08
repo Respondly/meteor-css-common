@@ -151,6 +151,13 @@ input[type='submit'].btn, input[type='submit'][class^='btn-']
   &.label-only
     border-color transparent
     background transparent
+    box-shadow none
+    color darken(white, 50%)
+    &:hover, &:focus, &:active
+      color darken(white, 90%)
+
+
+
 
 
 // Size ------------------------------------------------------
@@ -191,26 +198,26 @@ a.btn[disabled], a[class^='btn-'][disabled],
 button.btn[disabled], button[class^='btn-'][disabled]
 input[type='submit'].btn[disabled], input[type='submit'][class^='btn-'][disabled]
   // Default (silver).
-  opacity 0.3
+  opacity 0.2
   background BG_BOTTOM
   cursor default
 
   // Color.
   &.blue
     background rgba(BLUE_BG_BOTTOM, 0.5)
-    opacity 0.2
   &.red
     background rgba(RED_BG_BOTTOM, 0.4)
-    opacity 0.2
   &.green
     background rgba(GREEN_BG_BOTTOM, 0.5)
-    opacity 0.2
   &.orange
     background rgba(ORANGE_BG_BOTTOM, 0.5)
-    opacity 0.2
   &.black
     background rgba(BLACK_BG_BOTTOM, 0.5)
-    opacity 0.2
+
+  &.label-only
+    border-color transparent
+    background transparent
+    box-shadow none
 
 
 
