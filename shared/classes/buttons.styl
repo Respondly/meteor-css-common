@@ -148,6 +148,10 @@ input[type='submit'].btn, input[type='submit'][class^='btn-']
       background-image FOCUS_BG
       box-shadow PRESSED_SHADOW
 
+  &.label-only
+    border-color transparent
+    background transparent
+
 
 // Size ------------------------------------------------------
 
@@ -160,7 +164,7 @@ buttonSize(HEGIHT, FONT_SIZE, HORIZONTAL_PADDING)
 
 
 a.btn, button.btn, input[type='submit']
-  buttonSize(37px, 14px, 25px)
+  buttonSize(32px, 14px, 25px)
 
 a.btn-mini, button.btn-mini, input[type='submit'].btn-mini
   buttonSize(23px, 12px, 20px)
