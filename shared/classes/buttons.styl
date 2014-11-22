@@ -56,20 +56,23 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
   &:hover, &:focus
     transition none
 
+
+
+
   // Default (Silver).
-  &:hover
-    background FOCUS_BG
-  &:focus
-    background FOCUS_BG
-    box-shadow FOCUS_SHADOW_LIGHT
-    border-color darken(#DDDDDD, 10%)
-    border-bottom-color darken(#DDDDDD, 15%)
-  &:active
-    background FOCUS_BG
-    box-shadow PRESSED_SHADOW
+  color-silver()
+    &:hover
+      background FOCUS_BG
+    &:focus
+      background FOCUS_BG
+      box-shadow FOCUS_SHADOW_LIGHT
+      border-color darken(#DDDDDD, 10%)
+      border-bottom-color darken(#DDDDDD, 15%)
+    &:active
+      background FOCUS_BG
+      box-shadow PRESSED_SHADOW
 
-
-  &.blue, &.c-blue
+  color-blue()
     invertedColor()
     border-color #1d93dd
     background linear-gradient(top, BLUE_BG_TOP 15%, BLUE_BG_BOTTOM 87%)
@@ -85,7 +88,7 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       box-shadow PRESSED_SHADOW
 
 
-  &.red, &.c-red
+  color-red()
     invertedColor()
     border-color #C6463D
     border-color-bottom #A53A33
@@ -101,7 +104,7 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       box-shadow PRESSED_SHADOW
 
 
-  &.green, &.c-green
+  color-green()
     invertedColor()
     border-color #4FA64E
     border-color-bottom #418A40
@@ -119,7 +122,7 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       box-shadow PRESSED_SHADOW
 
 
-  &.orange, &.c-orange
+  color-orange()
     invertedColor()
     border-color #E39718
     border-color-bottom #BC7E14
@@ -137,7 +140,7 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       box-shadow PRESSED_SHADOW
 
 
-  &.black, &.c-black
+  color-black()
     invertedColor()
     border-color #303030
     border-color-bottom black
@@ -153,7 +156,7 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       box-shadow PRESSED_SHADOW
 
 
-  &.label-only, &.c-label=only
+  color-label-only()
     border-color transparent
     background transparent
     box-shadow none
@@ -161,6 +164,27 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
     &:hover, &:focus, &:active
       color darken(white, 90%)
 
+
+
+  color-silver()
+
+  &.blue, &.c-blue
+    color-blue()
+
+  &.red, &.c-red
+    color-red()
+
+  &.green, &.c-green
+    color-green()
+
+  &.orange, &.c-orange
+    color-orange()
+
+  &.black, &.c-black
+    color-black()
+
+  &.label-only, &.c-label-only
+    color-label-only()
 
 
 
