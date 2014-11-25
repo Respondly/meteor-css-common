@@ -2,13 +2,6 @@
 Common CSS styles and classes
 
 
-## Installation
-When running for the first time:
-
-    mrt update
-    package update
-
-
 
 
 ## License (MIT)
