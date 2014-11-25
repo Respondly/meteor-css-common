@@ -1,12 +1,15 @@
 Package.describe({
-  summary: 'Common CSS styles and classes'
+  name: 'respondly:css-common'
+  summary: 'Common CSS styles and classes',
+  version: '0.0.1',
+  git: 'https://github.com/Respondly/meteor-css-common.git'
 });
 
 
 
 Package.on_use(function (api) {
-  api.use(['coffeescript']);
-  api.use(['css-stylus']);
+  api.use('coffeescript');
+  api.use('respondly:css-stylus');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.add_files('shared/_normalize/normalize.css', 'client');
