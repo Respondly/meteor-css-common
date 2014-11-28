@@ -10,7 +10,7 @@ Package.describe({
 Package.onUse(function (api) {
   api.versionsFrom('1.0');
   api.use('coffeescript');
-  api.use('respondly:css-stylus');
+  api.use('respondly:css-stylus@1.0.0');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.addFiles('shared/_normalize/normalize.css', 'client');
