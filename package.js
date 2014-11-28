@@ -1,7 +1,7 @@
 Package.describe({
   name: 'respondly:css-common',
   summary: 'Common CSS styles and classes',
-  version: '0.0.1',
+  version: '1.0.0',
   git: 'https://github.com/Respondly/meteor-css-common.git'
 });
 
