@@ -1,5 +1,5 @@
 # CSS Common
-Common CSS styles and classes
+Common CSS styles and classes.
 
 
 

@@ -25,12 +25,6 @@ Package.onUse(function (api) {
   api.addFiles('shared/classes/common-classes.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/common-element.styl', 'client');
   api.addFiles('shared/classes/common-element.styl', 'server', { isAsset:true });
-  api.addFiles('shared/css-mixins/alert.import.styl', 'client');
-  api.addFiles('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
-  api.addFiles('shared/css-mixins/animation.import.styl', 'client');
-  api.addFiles('shared/css-mixins/animation.import.styl', 'server', { isAsset:true });
-  api.addFiles('shared/css-mixins/core.import.styl', 'client');
-  api.addFiles('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
 
 });
 
