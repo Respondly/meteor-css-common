@@ -25,6 +25,11 @@ Package.onUse(function (api) {
   api.addFiles('shared/classes/common-classes.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/common-element.styl', 'client');
   api.addFiles('shared/classes/common-element.styl', 'server', { isAsset:true });
+  api.addFiles('shared/css-mixins/alert.import.styl', 'client');
+  api.addFiles('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
+  api.addFiles('images/alert-panel-error.svg', ['client', 'server']);
+  api.addFiles('images/alert-panel-info.svg', ['client', 'server']);
+  api.addFiles('images/alert-panel-warn.svg', ['client', 'server']);
 
 });
 
