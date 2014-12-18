@@ -1,12 +1,5 @@
 # CSS Common
-Common CSS styles and classes
-
-
-## Installation
-When running for the first time:
-
-    mrt update
-    package update
+Common CSS styles and classes.
 
 
 
