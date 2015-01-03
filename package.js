@@ -27,6 +27,14 @@ Package.onUse(function (api) {
   api.addFiles('shared/classes/common-element.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/alert.import.styl', 'client');
   api.addFiles('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
+  api.addFiles('shared/css-mixins/animation.import.styl', 'client');
+  api.addFiles('shared/css-mixins/animation.import.styl', 'server', { isAsset:true });
+  api.addFiles('shared/css-mixins/core.import.styl', 'client');
+  api.addFiles('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
+  api.addFiles('shared/css-mixins/hyperlist.import.styl', 'client');
+  api.addFiles('shared/css-mixins/hyperlist.import.styl', 'server', { isAsset:true });
+  api.addFiles('shared/css-mixins/list.import.styl', 'client');
+  api.addFiles('shared/css-mixins/list.import.styl', 'server', { isAsset:true });
   api.addFiles('images/alert-panel-error.svg', ['client', 'server']);
   api.addFiles('images/alert-panel-info.svg', ['client', 'server']);
   api.addFiles('images/alert-panel-warn.svg', ['client', 'server']);

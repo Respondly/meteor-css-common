@@ -1,0 +1,60 @@
+@import 'core.import'
+@import 'list.import'
+
+
+$HYPERLIST_COLUMN_BORDER_COLOR = darken(white, 20%)
+
+
+// ------------------------------------------------------------------
+
+
+hyperlist-column-bg()
+  background white
+  border-right solid 1px $HYPERLIST_COLUMN_BORDER_COLOR
+
+
+// ------------------------------------------------------------------
+
+
+
+hyperlist-item()
+  padding 10px
+  padding-left 16px
+  border solid 1px transparent
+  border-radius 4px
+  color darken(white, 70%)
+  font-size 14px
+  font-weight 400
+  cursor default
+
+
+
+hyperlist-item-selected-bg()
+  list-item-selected-bg()
+
+
+
+hyperlist-item-focused-bg()
+  list-item-focused-bg-blue()
+
+
+
+hyperlist-item-focused()
+  list-item-focused-blue()
+
+
+
+// ------------------------------------------------------
+
+
+
+hyperlist-node-item()
+  hyperlist-item()
+  &.selected
+    hyperlist-item-selected-bg()
+    &.focused
+      hyperlist-item-focused()
+
+
+
+
