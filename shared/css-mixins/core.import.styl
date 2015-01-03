@@ -148,7 +148,6 @@ bg-image(path, width=null, height=null, repeat=null)
 
 
 package-image-path(packageName, path)
-  packageName = replace(':', '_', packageName)
   base = '/packages/' + packageName + '/images'
   base += '/' if not match('^\/', path)
   base + path
