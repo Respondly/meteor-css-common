@@ -146,12 +146,13 @@ bg-image(path, width=null, height=null, repeat=null)
   background-repeat repeat
 
 
+
 package-image-path(packageName, path)
-  // fixedPackageName = replace(':', '_', packageName)
-  fixedPackageName = packageName
-  base = '/packages/' + fixedPackageName + '/images'
+  packageName = replace(':', '_', packageName)
+  base = '/packages/' + packageName + '/images'
   base += '/' if not match('^\/', path)
   base + path
+
 
 
 package-image(packageName, path, width=null, height=null, repeat=null)
