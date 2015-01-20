@@ -1,7 +1,7 @@
 # CSS Common
 Common CSS styles and classes.
 
-
+[![Circle CI](https://circleci.com/gh/Respondly/meteor-css-common.svg?style=svg)](https://circleci.com/gh/Respondly/meteor-css-common)
 
 
 ## License (MIT)
