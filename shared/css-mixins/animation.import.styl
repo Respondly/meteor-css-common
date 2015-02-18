@@ -21,3 +21,17 @@ rotating-counter-clockwise(duration = 2s, origin = 50% 50%, iterationCount = inf
   animation-timing-function timingFunction
 
 
+animated(duration = 1s, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  transform-origin          origin
+  animation-duration        duration
+  animation-delay           delay
+  animation-iteration-count iterationCount
+  animation-timing-function timingFunction
+
+fade-in-up(duration, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-fade-in-up
+
+fade-in-down(duration = 1s, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-fade-in-down
