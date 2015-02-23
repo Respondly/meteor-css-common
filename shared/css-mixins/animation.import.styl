@@ -27,6 +27,11 @@ animated(duration = 1s, delay = 0s, timingFunction = ease, origin = 50% 50%, ite
   animation-delay           delay
   animation-iteration-count iterationCount
   animation-timing-function timingFunction
+  animation-fill-mode       forwards
+
+pulse(duration, delay = 0s, timingFunction = easeOutElastic, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-pulse
 
 fade-in-up(duration, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
   animated(duration, delay, timingFunction, origin, iterationCount)
