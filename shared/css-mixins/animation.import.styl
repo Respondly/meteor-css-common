@@ -21,3 +21,30 @@ rotating-counter-clockwise(duration = 2s, origin = 50% 50%, iterationCount = inf
   animation-timing-function timingFunction
 
 
+animated(duration = 1s, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  transform-origin          origin
+  animation-duration        duration
+  animation-delay           delay
+  animation-iteration-count iterationCount
+  animation-timing-function timingFunction
+  animation-fill-mode       forwards
+
+pulse(duration, delay = 0s, timingFunction = easeOutElastic, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-pulse
+
+fade-in(duration, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-fade-in
+
+fade-in-up(duration, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-fade-in-up
+
+fade-in-down(duration = 1s, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-fade-in-down
+
+bounce-in(duration = 750ms, delay = 0s, timingFunction = ease, origin = 50% 50%, iterationCount = 1)
+  animated(duration, delay, timingFunction, origin, iterationCount)
+  animation-name core-bounce-in
