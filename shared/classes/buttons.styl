@@ -13,6 +13,9 @@ GREEN_BG_BOTTOM = #4EA54D
 ORANGE_BG_TOP = #FCB340
 ORANGE_BG_BOTTOM = #FA9600
 
+DARK_ORANGE_BG_TOP = #FFA05A
+DARK_ORANGE_BG_BOTTOM = #FF7A18
+
 BLACK_BG_TOP = lighten(black, 40%)
 BLACK_BG_BOTTOM = #232323
 
@@ -139,6 +142,23 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       background-image FOCUS_BG
       box-shadow PRESSED_SHADOW
 
+  color-dark-orange()
+    invertedColor()
+    border-color #E39718
+    border-color-bottom #BC7E14
+    background-image linear-gradient(top, DARK_ORANGE_BG_TOP 11%, DARK_ORANGE_BG_BOTTOM 91%);
+    FOCUS_BG = linear-gradient(top, darken(DARK_ORANGE_BG_TOP, 8%) 11%, darken(DARK_ORANGE_BG_BOTTOM, 5%) 91%)
+    &:hover
+      background-image FOCUS_BG
+    &:focus
+      background-image FOCUS_BG
+      border-color darken(#E39718, 10%)
+      border-color-bottom darken(#BC7E14, 10%)
+      box-shadow FOCUS_SHADOW_DARK
+    &:active
+      background-image FOCUS_BG
+      box-shadow PRESSED_SHADOW
+
 
   color-black()
     invertedColor()
@@ -180,6 +200,9 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
 
   &.orange, &.c-orange
     color-orange()
+
+  &.dark-orange, &.c-dark-orange
+    color-dark-orange()
 
   &.black, &.c-black
     color-black()
@@ -255,6 +278,3 @@ input[type='submit'].btn[disabled], input[type='submit'][class^='btn-'][disabled
     color darken(white, 50%)
     &:hover, &:focus, &:active
       color darken(white, 50%)
-
-
-
