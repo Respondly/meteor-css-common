@@ -14,30 +14,30 @@ Package.onUse(function (api) {
 
   // Generated with: github.com/philcockfield/meteor-package-paths
   api.addFiles('shared/_normalize/normalize.css', 'client');
-  api.addFiles('shared/_normalize/normalize.css', 'server', { isAsset:true });
+  api.addAssets('shared/_normalize/normalize.css', 'server', { isAsset:true });
   api.addFiles('shared/classes/alerts.styl', 'client');
-  api.addFiles('shared/classes/alerts.styl', 'server', { isAsset:true });
+  api.addAssets('shared/classes/alerts.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/animation.styl', 'client');
-  api.addFiles('shared/classes/animation.styl', 'server', { isAsset:true });
+  api.addAssets('shared/classes/animation.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/buttons.styl', 'client');
-  api.addFiles('shared/classes/buttons.styl', 'server', { isAsset:true });
+  api.addAssets('shared/classes/buttons.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/common-classes.styl', 'client');
-  api.addFiles('shared/classes/common-classes.styl', 'server', { isAsset:true });
+  api.addAssets('shared/classes/common-classes.styl', 'server', { isAsset:true });
   api.addFiles('shared/classes/common-element.styl', 'client');
-  api.addFiles('shared/classes/common-element.styl', 'server', { isAsset:true });
+  api.addAssets('shared/classes/common-element.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/alert.import.styl', 'client');
-  api.addFiles('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
+  api.addAssets('shared/css-mixins/alert.import.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/animation.import.styl', 'client');
-  api.addFiles('shared/css-mixins/animation.import.styl', 'server', { isAsset:true });
+  api.addAssets('shared/css-mixins/animation.import.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/core.import.styl', 'client');
-  api.addFiles('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
+  api.addAssets('shared/css-mixins/core.import.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/hyperlist.import.styl', 'client');
-  api.addFiles('shared/css-mixins/hyperlist.import.styl', 'server', { isAsset:true });
+  api.addAssets('shared/css-mixins/hyperlist.import.styl', 'server', { isAsset:true });
   api.addFiles('shared/css-mixins/list.import.styl', 'client');
-  api.addFiles('shared/css-mixins/list.import.styl', 'server', { isAsset:true });
-  api.addFiles('images/alert-panel-error.svg', ['client', 'server']);
-  api.addFiles('images/alert-panel-info.svg', ['client', 'server']);
-  api.addFiles('images/alert-panel-warn.svg', ['client', 'server']);
+  api.addAssets('shared/css-mixins/list.import.styl', 'server', { isAsset:true });
+  api.addAssets('images/alert-panel-error.svg', ['client', 'server']);
+  api.addAssets('images/alert-panel-info.svg', ['client', 'server']);
+  api.addAssets('images/alert-panel-warn.svg', ['client', 'server']);
 
 });
 
