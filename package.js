@@ -9,7 +9,7 @@ Package.describe({
 
 Package.onUse(function (api) {
   // api.versionsFrom('1.0');
-  api.use('coffeescript');
+  api.use('coffeescript@1.0.10');
   api.use('respondly:css-stylus@1.0.3');
 
   // Generated with: github.com/philcockfield/meteor-package-paths
