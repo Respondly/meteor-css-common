@@ -1,13 +1,12 @@
 @import 'core.import'
 
-
 BG_TOP = #FFFFFF
 BG_BOTTOM = #E6E6E6
 
-BLUE_BG_TOP = #57B4E9
+BLUE_BG_TOP = #168EEA
 BLUE_BG_BOTTOM = #0990E0
 
-GREEN_BG_TOP = #5DC35C
+GREEN_BG_TOP = #73C466
 GREEN_BG_BOTTOM = #4EA54D
 
 ORANGE_BG_TOP = #FCB340
@@ -21,9 +20,6 @@ BLACK_BG_BOTTOM = #232323
 
 RED_BG_TOP = #ED5B54
 RED_BG_BOTTOM = #C1362A
-
-
-
 
 a.btn, a[class^='btn-'],
 button.btn, button[class^='btn-'],
@@ -41,55 +37,45 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
   user-select none
 
   // Color.
-  color darken(white, 90%)
-  border-color #DDDDDD
-  border-bottom-color darken(#DDDDDD, 10%)
-  text-shadow 0 1px 0 rgba(white ,0.9)
-  background linear-gradient(top, BG_TOP 24%, BG_BOTTOM 100%)
+  color #363c40
+  border-color #ced7df
+  background #fff
   FOCUS_BG = linear-gradient(top, darken(BG_TOP, 5%) 24%, BG_BOTTOM 100%)
-  FOCUS_SHADOW_LIGHT = 0px 1px 8px 3px rgba(black, 0.05)
-  FOCUS_SHADOW_DARK = 0px 1px 10px 2px rgba(black, 0.18)
-  PRESSED_SHADOW = inset 0px 2px 5px 0px rgba(black, 0.2)
+  text-shadow none
+  box-shadow none
 
   invertedColor()
     color white
-    text-shadow 0 -1px 0 rgba(black ,0.3)
-    box-shadow 0px 1px 5px 0px rgba(black, 0.14)
 
-  &:hover, &:focus
+  &:hover,
+  &:focus,
+  &:active
     transition none
-
-
+    border-color #afbecb
+    box-shadow none
+    text-shadow none
+    background none
+    background-color none
 
 
   // Default (Silver).
   color-silver()
     &:hover
-      background FOCUS_BG
-    &:focus
-      background FOCUS_BG
-      box-shadow FOCUS_SHADOW_LIGHT
-      border-color darken(#DDDDDD, 10%)
-      border-bottom-color darken(#DDDDDD, 15%)
-    &:active
-      background FOCUS_BG
-      box-shadow PRESSED_SHADOW
+      background #fff
 
   color-blue()
     invertedColor()
-    border-color #1d93dd
-    background linear-gradient(top, BLUE_BG_TOP 15%, BLUE_BG_BOTTOM 87%)
-    FOCUS_BG = linear-gradient(top, darken(BLUE_BG_TOP, 15%) 15%, darken(BLUE_BG_BOTTOM, 10%) 87%)
+    border-color BLUE_BG_TOP
+    background BLUE_BG_TOP
     &:hover
-      background FOCUS_BG
+      background BLUE_BG_TOP + 10%
     &:focus
-      background FOCUS_BG
-      border-color darken(#1d93dd, 20%)
-      box-shadow FOCUS_SHADOW_DARK
+      background BLUE_BG_TOP
+      border-color BLUE_BG_TOP
+      box-shadow none
     &:active
-      background FOCUS_BG
-      box-shadow PRESSED_SHADOW
-
+      background BLUE_BG_TOP
+      box-shadow none
 
   color-red()
     invertedColor()
@@ -103,27 +89,20 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       border-color darken(#C6463D, 20%)
       border-color-bottom darken(#A53A33, 20%)
       box-shadow FOCUS_SHADOW_DARK
-    &:active
-      box-shadow PRESSED_SHADOW
-
 
   color-green()
     invertedColor()
-    border-color #4FA64E
-    border-color-bottom #418A40
-    background-image linear-gradient(top, GREEN_BG_TOP 11%, GREEN_BG_BOTTOM 91%);
-    FOCUS_BG = linear-gradient(top, darken(GREEN_BG_TOP, 15%) 11%, darken(GREEN_BG_BOTTOM, 10%) 91%)
+    border-color GREEN_BG_TOP
+    background GREEN_BG_TOP
     &:hover
-      background-image FOCUS_BG
+      background GREEN_BG_TOP + 10%
     &:focus
-      background-image FOCUS_BG
-      border-color darken(#4FA64E, 20%)
-      border-color-bottom darken(#418A40, 20%)
-      box-shadow FOCUS_SHADOW_DARK
+      background GREEN_BG_TOP
+      border-color GREEN_BG_TOP
+      box-shadow none
     &:active
-      background-image FOCUS_BG
-      box-shadow PRESSED_SHADOW
-
+      background GREEN_BG_TOP
+      box-shadow none
 
   color-orange()
     invertedColor()
@@ -137,10 +116,8 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       background-image FOCUS_BG
       border-color darken(#E39718, 10%)
       border-color-bottom darken(#BC7E14, 10%)
-      box-shadow FOCUS_SHADOW_DARK
     &:active
       background-image FOCUS_BG
-      box-shadow PRESSED_SHADOW
 
   color-dark-orange()
     invertedColor()
@@ -154,11 +131,8 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       background-image FOCUS_BG
       border-color darken(#E39718, 10%)
       border-color-bottom darken(#BC7E14, 10%)
-      box-shadow FOCUS_SHADOW_DARK
     &:active
       background-image FOCUS_BG
-      box-shadow PRESSED_SHADOW
-
 
   color-black()
     invertedColor()
@@ -170,22 +144,15 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
       background-image FOCUS_BG
     &:focus
       background-image FOCUS_BG
-      box-shadow FOCUS_SHADOW_DARK
     &:active
       background-image FOCUS_BG
-      box-shadow PRESSED_SHADOW
-
 
   color-label-only()
     border-color transparent
     background transparent
-    box-shadow none
     color darken(white, 50%)
-    text-shadow none
     &:hover, &:focus, &:active
       color darken(white, 90%)
-
-
 
   color-silver()
 
@@ -210,9 +177,6 @@ input[type='submit'].btn, input[type='submit'][class^='btn-'],
   &.label-only, &.c-label-only
     color-label-only()
 
-
-
-
 // Size ------------------------------------------------------
 
 
@@ -225,30 +189,26 @@ buttonSize(HEIGHT, FONT_SIZE, HORIZONTAL_PADDING)
 
 a.btn, button.btn, input[type='submit'], .c-button
   buttonSize(32px, 14px, 25px)
-  border-radius 4px
+  border-radius 2px
 
 a.btn-mini, button.btn-mini, input[type='submit'].btn-mini, .c-button.c-mini
   buttonSize(22px, 12px, 20px)
-  border-radius 3px
+  border-radius 2px
 
 a.btn-pill, button.btn-pill, input[type='submit'].btn-pill, .c-button.c-pill
   HEIGHT = 22px
   buttonSize(HEIGHT, 12px, 20px)
-  border-radius (HEIGHT / 2)
+  border-radius 2px
 
 a.btn-small, button.btn-small, input[type='submit'].btn-small, .c-button.c-small
   buttonSize(28px, 13px, 20px)
-  border-radius 3px
+  border-radius 2px
 
 a.btn-large, button.btn-large, input[type='submit'].btn-large, .c-button.c-large
   buttonSize(50px, 20px, 35px)
-  border-radius 5px
-
-
+  border-radius 2px
 
 // ------------------------------------------------------
-
-
 
 a.btn[disabled], a[class^='btn-'][disabled],
 button.btn[disabled], button[class^='btn-'][disabled]
@@ -274,7 +234,6 @@ input[type='submit'].btn[disabled], input[type='submit'][class^='btn-'][disabled
   &.label-only, &.c-label-only
     border-color transparent
     background transparent
-    box-shadow none
     color darken(white, 50%)
     &:hover, &:focus, &:active
       color darken(white, 50%)
